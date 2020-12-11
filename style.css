@@ -1,0 +1,196 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e9f0f8;
+    font-family: 'Manrope', sans-serif;
+    font-size: 13px;
+}
+
+.container {
+    margin: 74px 24px 0;
+}
+
+.innerContainer {
+    background-color: #ffffff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.image img {
+    border-radius: 6px 6px 0 0;
+    display: block;
+    margin: 0 auto;
+}
+
+.image img {
+    height: auto;
+    max-width: 327px;
+}
+
+.description {
+    padding: 45px 33px 25px;
+}
+
+.description h1 {
+    color: #424963;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.description p {
+    color: #787d83;
+    line-height: 1.5;
+    margin-top: 26px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    padding: 0 33px 20px;
+}
+
+.innerCard {
+    display: flex;
+    align-items: center;
+}
+
+.avatar img {
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 16px;
+    width: 40px;
+}
+
+.buttonShare {
+    background-color: #eef2fb;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.buttonShare img {
+    height: 13px;
+    width: 15px;
+}
+
+.name {
+    color: #4b4d59;
+}
+
+.birthday {
+    color: #a7a8ac;
+}
+
+
+.share {
+    background-color: #49556f;
+    border-radius: 0 0 6px 6px;
+    color: #afbbd1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 33px;
+    height: 64px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 10px;
+}
+
+.share {
+    display: none;
+}
+
+.share h2 {
+    color: #ffffff;
+
+}
+
+.share i {
+    height: 20px;
+    width: 20px;
+}
+
+.mediaSocial {
+    display: inline-block;
+    align-items: center;
+}
+
+.mediaSocial a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.buttonShare2 {
+    background-color: #728299;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 60px;
+}
+
+.buttonShare2 img {
+    filter: brightness(0) invert(1);
+    height: 13px;
+    width: 15px;
+}
+.buttonShare:hover {
+    opacity: 0.8;
+    transition: 0.8s;
+}
+
+.buttonShare2:hover {
+    background-color: #cc66ff;
+    transition: 0.8s;
+}
+
+.mediaSocial a:hover {
+    color: #cc66ff;
+    transition: 0.8s;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container {
+        height: 280px;
+        width: 730px;
+        margin: 260px auto;
+    }
+
+    .innerContainer {
+        flex-direction: row;
+        height: 280px;
+        width: 730px;
+        margin: 260px auto;
+    }
+
+    .image img {
+        border-radius: 6px 0 0 6px;
+        height: 280px;
+        max-width: 285px;
+    }
+
+    .share {
+        height: 55px;
+        width: 248px;
+        border-radius: 10px;
+        transform: translate(258px, -160px);
+    }
+
+    .share img {
+        display: none;
+    }
+
+    .buttonShare2 {
+        display: none;
+    }
+}
